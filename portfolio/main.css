@@ -1,0 +1,40 @@
+:root {
+  /* Primary Colors */
+  --smoky-black: #11120D;
+  --olive-drab:  #565449;
+  --bone:        #D8CFBC;
+  --floral-white: #FFFBF4;
+
+  /* Functional Mappings */
+  --bg-main: var(--floral-white);
+  --bg-dark: var(--smoky-black);
+  --text-main: var(--smoky-black);
+  --text-muted: var(--olive-drab);
+  --accent: var(--bone);
+}
+
+body{
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    
+}
+
+.container {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    background-color: var(--floral-white);
+}
+.card{
+    border: 3px solid black;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    min-height: 150px;
+    max-height: 50vh;
+
+}
+
+.card-header {
+    margin: 0px 5px;
+    border-bottom: 1px solid var(--smoky-black);
+}
